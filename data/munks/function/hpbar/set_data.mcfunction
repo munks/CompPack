@@ -1,3 +1,4 @@
+execute unless predicate munks:has_vehicle run kill @s
 execute store result entity @s data.maxHP int 1 on vehicle run attribute @s max_health get
 execute store result entity @s data.curHP int 1 on vehicle run data get entity @s Health
 execute store result score @s hp.calc.max run data get entity @s data.maxHP

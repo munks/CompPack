@@ -1,5 +1,3 @@
-#execute as @e[type=text_display,distance=..25,tag=furnace_display] run function munks:furnace_display/tick with entity @s data
-
 execute if score @s ping matches 1.. run function munks:ping/run
 execute if score @s ping_remove matches 1.. run function munks:ping/remove_all
 execute if score @s help matches 1.. run function munks:help

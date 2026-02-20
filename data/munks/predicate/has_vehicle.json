@@ -2,8 +2,6 @@
   "condition": "entity_properties",
   "entity": "this",
   "predicate": {
-    "vehicle": {
-      "nbt": "{DeathTime:0}"
-    }
+    "vehicle": {}
   }
 }
