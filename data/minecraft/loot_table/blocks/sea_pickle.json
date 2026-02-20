@@ -5,56 +5,13 @@
       "bonus_rolls": 0.0,
       "entries": [
         {
-          "type": "minecraft:item",
-          "functions": [
+          "type": "minecraft:alternatives",
+          "children": [
             {
-              "add": false,
+              "type": "minecraft:item",
               "conditions": [
                 {
-                  "block": "minecraft:sea_pickle",
-                  "condition": "minecraft:block_state_property",
-                  "properties": {
-                    "pickles": "2"
-                  }
-                }
-              ],
-              "count": 2.0,
-              "function": "minecraft:set_count"
-            },
-            {
-              "add": false,
-              "conditions": [
-                {
-                  "block": "minecraft:sea_pickle",
-                  "condition": "minecraft:block_state_property",
-                  "properties": {
-                    "pickles": "3"
-                  }
-                }
-              ],
-              "count": 3.0,
-              "function": "minecraft:set_count"
-            },
-            {
-              "add": false,
-              "conditions": [
-                {
-                  "block": "minecraft:sea_pickle",
-                  "condition": "minecraft:block_state_property",
-                  "properties": {
-                    "pickles": "4"
-                  }
-                }
-              ],
-              "count": 4.0,
-              "function": "minecraft:set_count"
-            },
-            {
-              "function": "set_item",
-              "item": "minecraft:lime_dye",
-              "conditions": [
-                {
-                  "condition": "match_tool",
+                  "condition": "minecraft:match_tool",
                   "predicate": {
                     "predicates": {
                       "minecraft:enchantments": [
@@ -68,13 +25,67 @@
                     }
                   }
                 }
-              ]
+              ],
+              "name": "minecraft:lime_dye"
             },
             {
-              "function": "minecraft:explosion_decay"
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "survives_explosion"
+                }
+              ],
+              "name": "minecraft:sea_pickle"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:sea_pickle"
+        }
+      ],
+      "functions": [
+        {
+          "add": false,
+          "conditions": [
+            {
+              "block": "minecraft:sea_pickle",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "pickles": "2"
+              }
             }
           ],
-          "name": "minecraft:sea_pickle"
+          "count": 2.0,
+          "function": "minecraft:set_count"
+        },
+        {
+          "add": false,
+          "conditions": [
+            {
+              "block": "minecraft:sea_pickle",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "pickles": "3"
+              }
+            }
+          ],
+          "count": 3.0,
+          "function": "minecraft:set_count"
+        },
+        {
+          "add": false,
+          "conditions": [
+            {
+              "block": "minecraft:sea_pickle",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "pickles": "4"
+              }
+            }
+          ],
+          "count": 4.0,
+          "function": "minecraft:set_count"
         }
       ],
       "rolls": 1.0

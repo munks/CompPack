@@ -5,28 +5,13 @@
       "bonus_rolls": 0.0,
       "entries": [
         {
-          "type": "minecraft:item",
-          "functions": [
+          "type": "minecraft:alternatives",
+          "children": [
             {
-              "add": false,
+              "type": "minecraft:item",
               "conditions": [
                 {
-                  "block": "minecraft:sandstone_slab",
-                  "condition": "minecraft:block_state_property",
-                  "properties": {
-                    "type": "double"
-                  }
-                }
-              ],
-              "count": 2.0,
-              "function": "minecraft:set_count"
-            },
-            {
-              "function": "set_item",
-              "item": "minecraft:smooth_sandstone_slab",
-              "conditions": [
-                {
-                  "condition": "match_tool",
+                  "condition": "minecraft:match_tool",
                   "predicate": {
                     "predicates": {
                       "minecraft:enchantments": [
@@ -40,13 +25,35 @@
                     }
                   }
                 }
-              ]
+              ],
+              "name": "minecraft:smooth_sandstone_slab"
             },
             {
-              "function": "minecraft:explosion_decay"
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:explosion_decay"
+                }
+              ],
+              "name": "minecraft:sandstone_slab"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "add": false,
+          "conditions": [
+            {
+              "block": "minecraft:sandstone_slab",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "type": "double"
+              }
             }
           ],
-          "name": "minecraft:sandstone_slab"
+          "count": 2.0,
+          "function": "minecraft:set_count"
         }
       ],
       "rolls": 1.0

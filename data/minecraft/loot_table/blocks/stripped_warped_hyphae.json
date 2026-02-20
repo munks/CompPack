@@ -3,22 +3,15 @@
   "pools": [
     {
       "bonus_rolls": 0.0,
-      "conditions": [
-        {
-          "condition": "minecraft:survives_explosion"
-        }
-      ],
       "entries": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:stripped_warped_hyphae",
-          "functions": [
+          "type": "minecraft:alternatives",
+          "children": [
             {
-              "function": "set_item",
-              "item": "minecraft:charcoal",
+              "type": "minecraft:item",
               "conditions": [
                 {
-                  "condition": "match_tool",
+                  "condition": "minecraft:match_tool",
                   "predicate": {
                     "predicates": {
                       "minecraft:enchantments": [
@@ -32,9 +25,19 @@
                     }
                   }
                 }
-              ]
+              ],
+              "name": "minecraft:charcoal"
             }
           ]
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:survives_explosion"
+            }
+          ],
+          "name": "minecraft:stripped_warped_hyphae"
         }
       ],
       "rolls": 1.0

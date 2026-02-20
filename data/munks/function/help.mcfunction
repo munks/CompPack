@@ -2,8 +2,8 @@ scoreboard players reset @s help
 scoreboard players enable @s help
 
 tellraw @s [{text:"/trigger help",color:yellow}, {text:": 이 목록을 표시합니다.",color:white}]
-tellraw @s [{text:"/trigger ping",color:yellow}, {text:" 현재 위치에 핑을 추가합니다. 청크 로딩이 강제로 적용됩니다.",color:white}]
-tellraw @s [{text:"/trigger ping_remove",color:yellow}, {text:" 모든 핑을 제거합니다.",color:white}]
+tellraw @s [{text:"/trigger ping",color:yellow}, {text:": 현재 위치에 핑을 추가합니다. 청크 로딩이 강제로 적용됩니다.",color:white}]
+tellraw @s [{text:"/trigger ping_remove",color:yellow}, {text:": 모든 핑을 제거합니다.",color:white}]
 tellraw @s [{text:"clock",color:yellow}, {text:": 시계를 들고 있으면 게임 내 시간이 표시됩니다.",color:white}]
 tellraw @s [{text:"furnace_display",color:red}, {text:": 화로나 용광로에 있는 아이템이 표시됩니다. (제작중)",color:white}]
 tellraw @s [{text:"item_message",color:yellow}, {text:": Ctrl+Shift 입력 시 현재 들고 있는 아이템을 채팅창에 띄웁니다.",color:white}]
