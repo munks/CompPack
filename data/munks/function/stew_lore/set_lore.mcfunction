@@ -1,0 +1,1 @@
+$item modify entity @s weapon.mainhand {function:"minecraft:set_lore",entity:"this",lore:[{translate:"potion.withDuration",with:[{translate:"effect.minecraft.$(id)"},"$(duration)초"]}],mode:"replace_all"}

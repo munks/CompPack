@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "xxx",
+    "xox",
+    "xxx"
+  ],
+  "key": {
+    "x": "minecraft:ender_eye",
+    "o": "minecraft:map"
+  },
+  "result": {
+    "id": "minecraft:map",
+    "components": {
+      "minecraft:item_name": {
+        "translate": "filled_map.stronghold",
+        "fallback": "근거지 지도"
+      },
+      "minecraft:custom_data": {
+        "unset_map": true
+      }
+    },
+    "count": 1
+  }
+}

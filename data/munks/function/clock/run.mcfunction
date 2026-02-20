@@ -1,0 +1,1 @@
+title @s actionbar [{nbt:"time.min",storage:"munks:variables"},":",{nbt:"time.zero",storage:"munks:variables"},{nbt:"time.sec",storage:"munks:variables"},".",{nbt:"time.milisec",storage:"munks:variables"}]

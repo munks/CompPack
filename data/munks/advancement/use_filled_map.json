@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:filled_map"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "munks:map_coord/run"
+  }
+}

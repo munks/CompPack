@@ -1,0 +1,385 @@
+{
+  "description": "상태 막대기",
+  "supported_items": "stick",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "hit_block": [
+      {
+        "requirements": [{"condition": "location_check",
+            "predicate": {"block": {"blocks": "#munks:state_stick/facing_4","state": {"facing": "west"}}}
+        }],
+        "effect": {"type": "set_block_properties","properties": {"facing": "east"}}
+      },
+      {
+        "requirements": [{"condition": "location_check",
+            "predicate": {"block": {"blocks": "#munks:state_stick/facing_456","state": {"facing": "south"}}}
+        }],
+        "effect": {"type": "set_block_properties","properties": {"facing": "west"}}
+      },
+      {
+        "requirements": [{"condition": "location_check",
+            "predicate": {"block": {"blocks": "#munks:state_stick/facing_456","state": {"facing": "north"}}}
+        }],
+        "effect": {"type": "set_block_properties","properties": {"facing": "south"}}
+      },
+      {
+        "requirements": [{"condition": "location_check",
+            "predicate": {"block": {"blocks": "#munks:state_stick/facing_456","state": {"facing": "east"}}}
+        }],
+        "effect": {"type": "set_block_properties","properties": {"facing": "north"}}
+      },
+      {
+        "requirements": [{"condition": "location_check",
+            "predicate": {"block": {"blocks": "#munks:state_stick/facing_56","state": {"facing": "west"}}}
+        }],
+        "effect": {"type": "set_block_properties","properties": {"facing": "down"}}
+      },
+      {
+        "requirements": [{"condition": "location_check",
+            "predicate": {"block": {"blocks": "#munks:state_stick/facing_5","state": {"facing": "down"}}}
+        }],
+        "effect": {"type": "set_block_properties","properties": {"facing": "east"}}
+      },
+      {
+        "requirements": [{"condition": "location_check",
+            "predicate": {"block": {"blocks": "#munks:state_stick/facing_6","state": {"facing": "down"}}}
+        }],
+        "effect": {"type": "set_block_properties","properties": {"facing": "up"}}
+      },
+      {
+        "requirements": [{"condition": "location_check",
+            "predicate": {"block": {"blocks": "#munks:state_stick/facing_6","state": {"facing": "up"}}}
+        }],
+        "effect": {"type": "set_block_properties","properties": {"facing": "east"}}
+      },
+      {
+        "requirements": [{"condition": "location_check",
+            "predicate": {"block": {"blocks": "#munks:state_stick/rotation","state": {"rotation": "0"}}}
+        }],
+        "effect": {"type": "set_block_properties","properties": {"rotation": "1"}}
+      },
+      {
+        "requirements": [{"condition": "location_check",
+            "predicate": {"block": {"blocks": "#munks:state_stick/rotation","state": {"rotation": "1"}}}
+        }],
+        "effect": {"type": "set_block_properties","properties": {"rotation": "2"}}
+      },
+      {
+        "requirements": [{"condition": "location_check",
+            "predicate": {"block": {"blocks": "#munks:state_stick/rotation","state": {"rotation": "2"}}}
+        }],
+        "effect": {"type": "set_block_properties","properties": {"rotation": "3"}}
+      },
+      {
+        "requirements": [{"condition": "location_check",
+            "predicate": {"block": {"blocks": "#munks:state_stick/rotation","state": {"rotation": "3"}}}
+        }],
+        "effect": {"type": "set_block_properties","properties": {"rotation": "4"}}
+      },
+      {
+        "requirements": [{"condition": "location_check",
+            "predicate": {"block": {"blocks": "#munks:state_stick/rotation","state": {"rotation": "4"}}}
+        }],
+        "effect": {"type": "set_block_properties","properties": {"rotation": "5"}}
+      },
+      {
+        "requirements": [{"condition": "location_check",
+            "predicate": {"block": {"blocks": "#munks:state_stick/rotation","state": {"rotation": "5"}}}
+        }],
+        "effect": {"type": "set_block_properties","properties": {"rotation": "6"}}
+      },
+      {
+        "requirements": [{"condition": "location_check",
+            "predicate": {"block": {"blocks": "#munks:state_stick/rotation","state": {"rotation": "6"}}}
+        }],
+        "effect": {"type": "set_block_properties","properties": {"rotation": "7"}}
+      },
+      {
+        "requirements": [{"condition": "location_check",
+            "predicate": {"block": {"blocks": "#munks:state_stick/rotation","state": {"rotation": "7"}}}
+        }],
+        "effect": {"type": "set_block_properties","properties": {"rotation": "8"}}
+      },
+      {
+        "requirements": [{"condition": "location_check",
+            "predicate": {"block": {"blocks": "#munks:state_stick/rotation","state": {"rotation": "8"}}}
+        }],
+        "effect": {"type": "set_block_properties","properties": {"rotation": "9"}}
+      },
+      {
+        "requirements": [{"condition": "location_check",
+            "predicate": {"block": {"blocks": "#munks:state_stick/rotation","state": {"rotation": "9"}}}
+        }],
+        "effect": {"type": "set_block_properties","properties": {"rotation": "10"}}
+      },
+      {
+        "requirements": [{"condition": "location_check",
+            "predicate": {"block": {"blocks": "#munks:state_stick/rotation","state": {"rotation": "10"}}}
+        }],
+        "effect": {"type": "set_block_properties","properties": {"rotation": "11"}}
+      },
+      {
+        "requirements": [{"condition": "location_check",
+            "predicate": {"block": {"blocks": "#munks:state_stick/rotation","state": {"rotation": "11"}}}
+        }],
+        "effect": {"type": "set_block_properties","properties": {"rotation": "12"}}
+      },
+      {
+        "requirements": [{"condition": "location_check",
+            "predicate": {"block": {"blocks": "#munks:state_stick/rotation","state": {"rotation": "12"}}}
+        }],
+        "effect": {"type": "set_block_properties","properties": {"rotation": "13"}}
+      },
+      {
+        "requirements": [{"condition": "location_check",
+            "predicate": {"block": {"blocks": "#munks:state_stick/rotation","state": {"rotation": "13"}}}
+        }],
+        "effect": {"type": "set_block_properties","properties": {"rotation": "14"}}
+      },
+      {
+        "requirements": [{"condition": "location_check",
+            "predicate": {"block": {"blocks": "#munks:state_stick/rotation","state": {"rotation": "14"}}}
+        }],
+        "effect": {"type": "set_block_properties","properties": {"rotation": "15"}}
+      },
+      {
+        "requirements": [{"condition": "location_check",
+            "predicate": {"block": {"blocks": "#munks:state_stick/rotation","state": {"rotation": "15"}}}
+        }],
+        "effect": {"type": "set_block_properties","properties": {"rotation": "0"}}
+      },
+      {
+        "requirements": [
+            {"condition": "location_check","predicate": {"block": {
+                "blocks": "#munks:state_stick/type","state": {"type": "single","facing":"east"}
+            }}},
+            {"condition": "location_check","predicate": {"block": {
+                "blocks": "#munks:state_stick/type","state": {"facing":"east"}
+            }},"offsetZ": -1}
+        ],
+        "effect": {"type": "set_block_properties","properties": {"type": "left"}}
+      },
+      {
+        "requirements": [
+            {"condition": "location_check","predicate": {"block": {
+                "blocks": "#munks:state_stick/type","state": {"type": "left","facing":"east"}
+            }}},
+            {"condition": "location_check","predicate": {"block": {
+                "blocks": "#munks:state_stick/type","state": {"facing":"east"}
+            }},"offsetZ": 1}
+        ],
+        "effect": {"type": "set_block_properties","properties": {"type": "right"}}
+      },
+      {
+        "requirements": [
+            {"condition": "location_check","predicate": {"block": {
+                "blocks": "#munks:state_stick/type","state": {"type": "right","facing":"east"}
+            }}}
+        ],
+        "effect": {"type": "set_block_properties","properties": {"type": "single"}}
+      },
+      {
+        "requirements": [
+            {"condition": "location_check","predicate": {"block": {
+                "blocks": "#munks:state_stick/type","state": {"type": "single","facing":"north"}
+            }}},
+            {"condition": "location_check","predicate": {"block": {
+                "blocks": "#munks:state_stick/type","state": {"facing":"north"}
+            }},"offsetX": 1}
+        ],
+        "effect": {"type": "set_block_properties","properties": {"type": "left"}}
+      },
+      {
+        "requirements": [
+            {"condition": "location_check","predicate": {"block": {
+                "blocks": "#munks:state_stick/type","state": {"type": "left","facing":"north"}
+            }}},
+            {"condition": "location_check","predicate": {"block": {
+                "blocks": "#munks:state_stick/type","state": {"facing":"north"}
+            }},"offsetX": -1}
+        ],
+        "effect": {"type": "set_block_properties","properties": {"type": "right"}}
+      },
+      {
+        "requirements": [
+            {"condition": "location_check","predicate": {"block": {
+                "blocks": "#munks:state_stick/type","state": {"type": "right","facing":"north"}
+            }}}
+        ],
+        "effect": {"type": "set_block_properties","properties": {"type": "single"}}
+      },
+      {
+        "requirements": [
+            {"condition": "location_check","predicate": {"block": {
+                "blocks": "#munks:state_stick/type","state": {"type": "single","facing":"west"}
+            }}},
+            {"condition": "location_check","predicate": {"block": {
+                "blocks": "#munks:state_stick/type","state": {"facing":"west"}
+            }},"offsetZ": 1}
+        ],
+        "effect": {"type": "set_block_properties","properties": {"type": "left"}}
+      },
+      {
+        "requirements": [
+            {"condition": "location_check","predicate": {"block": {
+                "blocks": "#munks:state_stick/type","state": {"type": "left","facing":"west"}
+            }}},
+            {"condition": "location_check","predicate": {"block": {
+                "blocks": "#munks:state_stick/type","state": {"facing":"west"}
+            }},"offsetZ": -1}
+        ],
+        "effect": {"type": "set_block_properties","properties": {"type": "right"}}
+      },
+      {
+        "requirements": [
+            {"condition": "location_check","predicate": {"block": {
+                "blocks": "#munks:state_stick/type","state": {"type": "right","facing":"west"}
+            }}}
+        ],
+        "effect": {"type": "set_block_properties","properties": {"type": "single"}}
+      },
+      {
+        "requirements": [
+            {"condition": "location_check","predicate": {"block": {
+                "blocks": "#munks:state_stick/type","state": {"type": "single","facing":"south"}
+            }}},
+            {"condition": "location_check","predicate": {"block": {
+                "blocks": "#munks:state_stick/type","state": {"facing":"south"}
+            }},"offsetX": -1}
+        ],
+        "effect": {"type": "set_block_properties","properties": {"type": "left"}}
+      },
+      {
+        "requirements": [
+            {"condition": "location_check","predicate": {"block": {
+                "blocks": "#munks:state_stick/type","state": {"type": "left","facing":"south"}
+            }}},
+            {"condition": "location_check","predicate": {"block": {
+                "blocks": "#munks:state_stick/type","state": {"facing":"south"}
+            }},"offsetX": 1}
+        ],
+        "effect": {"type": "set_block_properties","properties": {"type": "right"}}
+      },
+      {
+        "requirements": [
+            {"condition": "location_check","predicate": {"block": {
+                "blocks": "#munks:state_stick/type","state": {"type": "right","facing":"south"}
+            }}}
+        ],
+        "effect": {"type": "set_block_properties","properties": {"type": "single"}}
+      },
+      {
+        "requirements": [{"condition": "location_check",
+            "predicate": {"block": {"blocks": "#munks:state_stick/shape_610","state": {"shape": "ascending_east"}}}
+        }],
+        "effect": {"type": "set_block_properties","properties": {"shape": "ascending_north"}}
+      },
+      {
+        "requirements": [{"condition": "location_check",
+            "predicate": {"block": {"blocks": "#munks:state_stick/shape_610","state": {"shape": "ascending_north"}}}
+        }],
+        "effect": {"type": "set_block_properties","properties": {"shape": "ascending_south"}}
+      },
+      {
+        "requirements": [{"condition": "location_check",
+            "predicate": {"block": {"blocks": "#munks:state_stick/shape_610","state": {"shape": "ascending_south"}}}
+        }],
+        "effect": {"type": "set_block_properties","properties": {"shape": "ascending_west"}}
+      },
+      {
+        "requirements": [{"condition": "location_check",
+            "predicate": {"block": {"blocks": "#munks:state_stick/shape_610","state": {"shape": "ascending_west"}}}
+        }],
+        "effect": {"type": "set_block_properties","properties": {"shape": "east_west"}}
+      },
+      {
+        "requirements": [{"condition": "location_check",
+            "predicate": {"block": {"blocks": "#munks:state_stick/shape_610","state": {"shape": "east_west"}}}
+        }],
+        "effect": {"type": "set_block_properties","properties": {"shape": "north_south"}}
+      },
+      {
+        "requirements": [{"condition": "location_check",
+            "predicate": {"block": {"blocks": "#munks:state_stick/shape_6","state": {"shape": "north_south"}}}
+        }],
+        "effect": {"type": "set_block_properties","properties": {"shape": "ascending_east"}}
+      },
+      {
+        "requirements": [{"condition": "location_check",
+            "predicate": {"block": {"blocks": "#munks:state_stick/shape_10","state": {"shape": "north_south"}}}
+        }],
+        "effect": {"type": "set_block_properties","properties": {"shape": "north_east"}}
+      },
+      {
+        "requirements": [{"condition": "location_check",
+            "predicate": {"block": {"blocks": "#munks:state_stick/shape_10","state": {"shape": "north_east"}}}
+        }],
+        "effect": {"type": "set_block_properties","properties": {"shape": "north_west"}}
+      },
+      {
+        "requirements": [{"condition": "location_check",
+            "predicate": {"block": {"blocks": "#munks:state_stick/shape_10","state": {"shape": "north_west"}}}
+        }],
+        "effect": {"type": "set_block_properties","properties": {"shape": "south_east"}}
+      },
+      {
+        "requirements": [{"condition": "location_check",
+            "predicate": {"block": {"blocks": "#munks:state_stick/shape_10","state": {"shape": "south_east"}}}
+        }],
+        "effect": {"type": "set_block_properties","properties": {"shape": "south_west"}}
+      },
+      {
+        "requirements": [{"condition": "location_check",
+            "predicate": {"block": {"blocks": "#munks:state_stick/shape_10","state": {"shape": "south_west"}}}
+        }],
+        "effect": {"type": "set_block_properties","properties": {"shape": "ascending_east"}}
+      },
+      {
+        "requirements": [{"condition": "location_check",
+            "predicate": {"block": {"blocks": "#munks:state_stick/shape_5","state": {"shape": "inner_left"}}}
+        }],
+        "effect": {"type": "set_block_properties","properties": {"shape": "inner_right"}}
+      },
+      {
+        "requirements": [{"condition": "location_check",
+            "predicate": {"block": {"blocks": "#munks:state_stick/shape_5","state": {"shape": "inner_right"}}}
+        }],
+        "effect": {"type": "set_block_properties","properties": {"shape": "outer_left"}}
+      },
+      {
+        "requirements": [{"condition": "location_check",
+            "predicate": {"block": {"blocks": "#munks:state_stick/shape_5","state": {"shape": "outer_left"}}}
+        }],
+        "effect": {"type": "set_block_properties","properties": {"shape": "outer_right"}}
+      },
+      {
+        "requirements": [{"condition": "location_check",
+            "predicate": {"block": {"blocks": "#munks:state_stick/shape_5","state": {"shape": "outer_right"}}}
+        }],
+        "effect": {"type": "set_block_properties","properties": {"shape": "straight"}}
+      },
+      {
+        "requirements": [{"condition": "location_check",
+            "predicate": {"block": {"blocks": "#munks:state_stick/shape_5","state": {"shape": "straight"}}}
+        }],
+        "effect": {"type": "set_block_properties","properties": {"shape": "inner_left"}}
+      },
+      {
+        "effect": {"type": "change_item_damage", "amount": 1.0}
+      }
+    ]
+  }
+}

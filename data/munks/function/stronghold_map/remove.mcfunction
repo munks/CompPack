@@ -1,0 +1,1 @@
+execute as @a at @s as @n[type=item,distance=..5] if data entity @s Item.components."minecraft:custom_data".unset_map run kill @s

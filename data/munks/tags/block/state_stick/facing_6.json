@@ -1,0 +1,10 @@
+{
+    "values": [
+        "minecraft:barrel",
+        "minecraft:shulker_box",
+        "minecraft:dispenser",
+        "minecraft:dropper",
+        "minecraft:piston",
+        "minecraft:sticky_piston"
+    ]
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:snow_block"
+  ],
+  "result": {
+    "count": 4,
+    "id": "minecraft:snowball",
+    "components": {
+      "minecraft:max_stack_size": 64
+    }
+  }
+}

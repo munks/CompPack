@@ -1,0 +1,1 @@
+$tellraw @a [{selector:"@s"},": ",[{text:"[",color:yellow},{translate:"item.minecraft.$(name)",fallback:"",hover_event:{action:show_item,id:"$(id)",components:$(components),count:$(count)}},{translate:"block.minecraft.$(name)",fallback:"",hover_event:{action:show_item,id:"$(id)",components:$(components),count:$(count)}},"]"]]

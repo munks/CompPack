@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "requirements": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "item": {
+          "items": "minecraft:lead"
+        },
+        "entity": {
+          "type": "minecraft:villager"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "munks:leash_villager/run"
+  }
+}

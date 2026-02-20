@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "requirements": {
+      "trigger": "minecraft:started_riding"
+    }
+  },
+  "rewards": {
+    "function": "munks:vehicle_desc/run"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "requirements": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "munks:stronghold_map"
+      }
+    }
+  },
+  "rewards": {
+    "function": "munks:stronghold_map/run",
+    "loot": [
+      "munks:stronghold_map"
+    ]
+  }
+}
