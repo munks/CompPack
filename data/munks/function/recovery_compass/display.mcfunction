@@ -1,0 +1,1 @@
+title @s actionbar ["[",{nbt:"LastDeathLocation.pos[0]",entity:"@s"},", ",{nbt:"LastDeathLocation.pos[1]",entity:"@s"},", ",{nbt:"LastDeathLocation.pos[2]",entity:"@s"},"]"]

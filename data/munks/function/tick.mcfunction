@@ -14,7 +14,7 @@ execute as @e[type=!player,type=!armor_stand,type=!item,predicate=!munks:has_hpb
 execute as @e[type=text_display,tag=hpbar_display] run function munks:hpbar/set_data
 
 execute as @e[type=marker,tag=light_marker] at @s run function munks:light/marker_check
-execute as @a at @s run function munks:tick_internal
+execute as @a at @s run function munks:tick_player
 
 execute as @e[type=#arrows,tag=guided_arrow] at @s run function munks:guided_arrow/tick
 

@@ -7,4 +7,4 @@ execute store result score vd.jump munks.var on vehicle run attribute @s jump_st
 execute store result storage munks:variables vehicle_desc.speed float 0.0001 run scoreboard players get vd.speed munks.var
 execute store result storage munks:variables vehicle_desc.jump float 0.0001 run scoreboard players get vd.jump munks.var
 
-title @s actionbar ["Speed: ",{nbt:vehicle_desc.speed,storage:"munks:variables"},", Jump: ",{nbt:vehicle_desc.jump,storage:"munks:variables"}]
+title @s actionbar ["이동 속도: ",{nbt:vehicle_desc.speed,storage:"munks:variables"},", 점프력: ",{nbt:vehicle_desc.jump,storage:"munks:variables"}]
