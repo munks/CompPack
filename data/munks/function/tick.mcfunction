@@ -19,3 +19,4 @@ execute as @a at @s run function munks:tick_internal
 execute as @e[type=#arrows,tag=guided_arrow] at @s run function munks:guided_arrow/tick
 
 execute as @e[type=item,predicate=munks:farmland_check] at @s run function munks:crops/run
+execute as @e[type=item,predicate=munks:soulsand_check] if data entity @s Item{id:"minecraft:nether_wart"} at @s run function munks:crops/plant {type:nether_wart}
