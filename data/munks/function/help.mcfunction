@@ -15,6 +15,7 @@ tellraw @s [{text:"respawn_anchor",color:yellow}, {text:": 최대로 충전된 �
 tellraw @s [{text:"stew_lore",color:yellow}, {text:": 수상한 스튜를 손에 들면 효과를 알 수 있습니다.",color:white}]
 tellraw @s [{text:"leash_villager",color:yellow}, {text:": 주민을 끈으로 끌고 다닐 수 있습니다.",color:white}]
 tellraw @s [{text:"vehicle_desc",color:yellow}, {text:": 몹 탑승 시 이동 속도와 점프력이 표시됩니다.",color:white}]
+tellraw @s [{text:"the_cake_is_a_lie",color:yellow}, {text:": 케이크 파괴 시 케이크 아이템이 떨어집니다.",color:white}]
 tellraw @s [{text:"max_stack",color:yellow}, {text:": 눈덩이, 엔더 진주, 달걀의 최대 중첩이 64개로 늘어납니다. (일부 제외)",color:white}]
 tellraw @s [{text:"crops",color:yellow}, {text:": 빈 경작지에 씨앗을 던지거나 영혼 모래에 네더 사마귀를 던지면 자동으로 심어집니다.",color:white}]
 tellraw @s [{text:"farmland",color:yellow}, {text:": 네더라이트 괭이로 경작지를 만들 시 3x3 공간이 한번에 만들어집니다.",color:white}]

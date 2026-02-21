@@ -1,0 +1,120 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cake",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:block_state": {
+                  "bites": "1"
+                }
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "minecraft:cake",
+                  "properties": {
+                    "bites": "1"
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:block_state": {
+                  "bites": "2"
+                }
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "minecraft:cake",
+                  "properties": {
+                    "bites": "2"
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:block_state": {
+                  "bites": "3"
+                }
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "minecraft:cake",
+                  "properties": {
+                    "bites": "3"
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:block_state": {
+                  "bites": "4"
+                }
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "minecraft:cake",
+                  "properties": {
+                    "bites": "4"
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:block_state": {
+                  "bites": "5"
+                }
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "minecraft:cake",
+                  "properties": {
+                    "bites": "5"
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:block_state": {
+                  "bites": "6"
+                }
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "minecraft:cake",
+                  "properties": {
+                    "bites": "6"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "minecraft:blocks/cake"
+}
