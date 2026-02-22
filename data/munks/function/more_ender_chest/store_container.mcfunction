@@ -1,0 +1,1 @@
+$data modify storage munks:variables player.$(idx).ender.$(container) set from entity @s EnderItems

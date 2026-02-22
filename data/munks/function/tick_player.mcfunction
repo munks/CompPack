@@ -13,12 +13,18 @@ execute if items entity @s weapon.mainhand filled_map[!map_decorations={},!consu
 execute if items entity @s weapon.mainhand suspicious_stew[lore=[]] run function munks:stew_lore/run
 
 # on death
-execute if score @s death matches 1.. run function munks:respawn_anchor/run
+execute if score @s munks.death matches 1.. run function munks:respawn_anchor/run
 
 # press Ctrl+Shift
-scoreboard players remove @s[scores={send_cool=1..}] send_cool 1
+scoreboard players remove @s[scores={munks.send_cool=1..}] munks.send_cool 1
 execute if predicate munks:send_item_message run function munks:send_message/run_item
 execute if predicate munks:send_pos_message run function munks:send_message/run_pos
 
 # has left
-execute if score @s has_left matches 1.. run function munks:leave_game/run
+execute if score @s munks.has_left matches 1.. run function munks:leave_game/run
+
+# functional items on cursor
+execute if items entity @s player.cursor barrier[custom_data={functional_item:true}] run function munks:more_ender_chest/container_set
+
+# remove nearby functional items
+execute if entity @e[type=item,distance=..5,nbt={Item:{components:{"minecraft:custom_data":{functional_item:true}}}}] run function munks:more_ender_chest/functional_set

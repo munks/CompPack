@@ -1,0 +1,1 @@
+$item modify entity @s enderchest.$(Slot) {function:"minecraft:set_count",count:$(count)}

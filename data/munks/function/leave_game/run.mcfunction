@@ -1,3 +1,3 @@
-scoreboard players reset @s has_left
+scoreboard players reset @s munks.has_left
 
 tag @s remove loaded

@@ -1,13 +1,15 @@
 scoreboard objectives add help trigger
 scoreboard objectives add ping trigger
 scoreboard objectives add ping_remove trigger
+scoreboard objectives add munks.player.idx dummy
+scoreboard objectives add munks.ender.idx dummy
 scoreboard objectives add hp.calc.cur dummy
 scoreboard objectives add hp.calc.max dummy
 scoreboard objectives add munks.var dummy
 scoreboard objectives add const dummy
-scoreboard objectives add has_left custom:leave_game
-scoreboard objectives add death deathCount
-scoreboard objectives add send_cool dummy
+scoreboard objectives add munks.has_left custom:leave_game
+scoreboard objectives add munks.death deathCount
+scoreboard objectives add munks.send_cool dummy
 scoreboard players set 1 const 1
 scoreboard players set 2 const 2
 scoreboard players set 3 const 3

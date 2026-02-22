@@ -1,4 +1,4 @@
-scoreboard players set @s send_cool 100
+scoreboard players set @s munks.send_cool 100
 
 execute store result storage munks:variables spm.x int 1 run data get entity @s Pos[0]
 execute store result storage munks:variables spm.y int 1 run data get entity @s Pos[1]

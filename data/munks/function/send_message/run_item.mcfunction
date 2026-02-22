@@ -1,4 +1,4 @@
-scoreboard players set @s send_cool 100
+scoreboard players set @s munks.send_cool 100
 data remove storage munks:variables sim_data
 data modify storage munks:variables sim_data set from entity @s SelectedItem
 data modify storage munks:variables sim_data.name set string entity @s SelectedItem.id 10

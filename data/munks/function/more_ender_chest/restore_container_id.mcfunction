@@ -1,0 +1,1 @@
+$item replace entity @s enderchest.$(Slot) with $(id)
