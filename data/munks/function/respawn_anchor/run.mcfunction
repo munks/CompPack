@@ -1,4 +1,4 @@
-scoreboard players reset @s death
+scoreboard players reset @s munks.death
 
 data modify storage munks:variables pos_ra.x set from entity @s respawn.pos[0]
 data modify storage munks:variables pos_ra.y set from entity @s respawn.pos[1]
