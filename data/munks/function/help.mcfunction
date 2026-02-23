@@ -15,19 +15,21 @@ tellraw @s [{text:"respawn_anchor",color:yellow}, {text:": 최대로 충전된 �
 tellraw @s [{text:"stew_lore",color:yellow}, {text:": 수상한 스튜를 손에 들면 효과를 알 수 있습니다.",color:white}]
 tellraw @s [{text:"leash_villager",color:yellow}, {text:": 주민을 끈으로 끌고 다닐 수 있습니다.",color:white}]
 tellraw @s [{text:"vehicle_desc",color:yellow}, {text:": 몹 탑승 시 이동 속도와 점프력이 표시됩니다.",color:white}]
-tellraw @s [{text:"the_cake_is_a_lie",color:yellow}, {text:": 케이크 파괴 시 케이크 아이템이 떨어집니다.",color:white}]
 tellraw @s [{text:"max_stack",color:yellow}, {text:": 눈덩이, 엔더 진주, 달걀의 최대 중첩이 64개로 늘어납니다. (일부 제외)",color:white}]
 tellraw @s [{text:"more_ender_chest",color:yellow}, {text:": 엔더 상자 공간이 4배로 늘어납니다.",color:white}]
 tellraw @s [{text:"crops",color:yellow}, {text:": 빈 경작지에 씨앗을 던지거나 영혼 모래에 네더 사마귀를 던지면 자동으로 심어집니다.",color:white}]
 tellraw @s [{text:"farmland",color:yellow}, {text:": 네더라이트 괭이로 경작지를 만들 시 3x3 공간이 한번에 만들어집니다.",color:white}]
 tellraw @s [{text:"guided_arrow",color:yellow}, {text:": 마법 부여(보물, 활/석궁), 발사된 화살이 근처 몹에게 유도됨, 무한과 중복 부여 불가",color:white}]
 tellraw @s [{text:"smelting",color:yellow}, {text:": 마법 부여(보물, 곡괭이/도끼), 블럭을 캘 시 구워진 상태로 떨어짐",color:white}]
+tellraw @s [{text:"loot_table",color:yellow}, {text:": 일부 루트 테이블이 수정됩니다.\n",color:white}, \
+[{color:gray,text:"     케이크 - 현재 상태 그대로 아이템이 떨어집니다.\n"}, \
+                    "     근거지 도서관(상자) - 지도와 나침반이 나오지 않습니다."]]
 tellraw @s [{text:"enchant",color:yellow}, {text:": 마법 부여가 변경됩니다.\n",color:white}, \
 [{color:gray,text:"     가시 - 확률: 30~60%, 피해: 2~5, 내구도 감소 제거\n"}, \
                     "     찌르기 - 물에 있거나 비를 맞고 있는 몹에게도 적용\n", \
                     "     화염 - 석궁에 적용 가능하고 마법 부여대에서 나타남\n", \
                     "     날카로움 - 효율과 같은 효과를 가짐, 효율과 중복 부여 불가", \
-                    "     도끼 - 살충, 발화, 밀치기, 약탈, 날카로움, 강타가 적용 가능하고 마법 부여대에서 나타남",]]
+                    "     도끼 - 살충, 발화, 밀치기, 약탈, 날카로움, 강타가 적용 가능하고 마법 부여대에서 나타남"]]
 tellraw @s [{text:"more_recipe",color:yellow}, {text:": 레시피가 추가됩니다.\n",color:white}, \
 [{color:gray,text:"     자수정 블럭을 자수정 조각 4개로 변환 가능합니다.\n"}, \
                     "     프리즈머린을 프리즈머린 조각 4개로 변환 가능합니다.\n", \
