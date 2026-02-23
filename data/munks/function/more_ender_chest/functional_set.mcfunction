@@ -1,5 +1,6 @@
-execute if score @s munks.ender.idx matches 0 run item replace entity @s enderchest.25 with barrier[custom_data={functional_item:true,nofunc:true},tooltip_display={hide_tooltip:true}]
-execute if score @s munks.ender.idx matches 1..3 run item replace entity @s enderchest.25 with barrier[custom_data={functional_item:true,left:true},item_name="이전 컨테이너로",lore=[["현재: ",{score:{name:"@s",objective:"munks.ender.idx"}},"번 컨테이너"]]]
-execute if score @s munks.ender.idx matches 0..2 run item replace entity @s enderchest.26 with barrier[custom_data={functional_item:true,right:true},item_name="다음 컨테이너로",lore=[["현재: ",{score:{name:"@s",objective:"munks.ender.idx"}},"번 컨테이너"]]]
-execute if score @s munks.ender.idx matches 3 run item replace entity @s enderchest.26 with barrier[custom_data={functional_item:true,nofunc:true},tooltip_display={hide_tooltip:true}]
+execute if score @s munks.ender.idx matches 0 run item replace entity @s enderchest.25 with barrier[custom_data={functional_item:true},tooltip_display={hide_tooltip:true}]
+execute if score @s munks.ender.idx matches 1..3 run item replace entity @s enderchest.25 with barrier[custom_data={functional_item:true},item_name="이전 컨테이너로",lore=[["현재: ",{score:{name:"@s",objective:"munks.ender.idx"}},"번 컨테이너"]],max_stack_size=1]
+execute if score @s munks.ender.idx matches 0..2 run item replace entity @s enderchest.26 with barrier[custom_data={functional_item:true},item_name="다음 컨테이너로",lore=[["현재: ",{score:{name:"@s",objective:"munks.ender.idx"}},"번 컨테이너"]],max_stack_size=2]
+execute if score @s munks.ender.idx matches 3 run item replace entity @s enderchest.26 with barrier[custom_data={functional_item:true},tooltip_display={hide_tooltip:true}]
 execute as @e[type=item,distance=..5] if data entity @s Item.components."minecraft:custom_data".functional_item run kill @s
+clear @s barrier[custom_data={functional_item:true}]

@@ -26,5 +26,6 @@ execute if score @s munks.has_left matches 1.. run function munks:leave_game/run
 # functional items on cursor
 execute if items entity @s player.cursor barrier[custom_data={functional_item:true}] run function munks:more_ender_chest/container_set
 
-# remove nearby functional items
+# remove unexpected functional items
 execute if entity @e[type=item,distance=..5,nbt={Item:{components:{"minecraft:custom_data":{functional_item:true}}}}] run function munks:more_ender_chest/functional_set
+execute if items entity @s container.* barrier[custom_data={functional_item:true}] run function munks:more_ender_chest/functional_set

@@ -19,8 +19,12 @@
             "sprint": true
           }
         },
-        "slots": {
-          "weapon.mainhand": {}
+        "equipment": {
+          "mainhand": {
+            "count": {
+              "min": 1
+            }
+          }
         }
       }
     }
