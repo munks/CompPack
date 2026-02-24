@@ -1,0 +1,33 @@
+{
+  "criteria": {
+    "requirements": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": "minecraft:lodestone"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": "minecraft:compass",
+              "components": {
+                "custom_data": {
+                  "end_compass": true
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "munks:end_compass/remove_tracker"
+  }
+}

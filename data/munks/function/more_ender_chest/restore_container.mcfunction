@@ -24,8 +24,6 @@ item replace entity @s enderchest.21 with air
 item replace entity @s enderchest.22 with air
 item replace entity @s enderchest.23 with air
 item replace entity @s enderchest.24 with air
-item replace entity @s enderchest.25 with air
-item replace entity @s enderchest.26 with air
 
 # 아이템 슬롯만큼 루프
 $data modify storage munks:variables player.execute_data set from storage munks:variables player.$(idx).ender.$(container)

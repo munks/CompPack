@@ -4,16 +4,6 @@
     "translate": "enchantment.minecraft.smelting",
     "fallback": "제련"
   },
-  "effects": {
-    "minecraft:projectile_spawned": [
-      {
-        "effect": {
-          "type": "minecraft:run_function",
-          "function": "munks:guided_arrow/spawned"
-        }
-      }
-    ]
-  },
   "exclusive_set": [
     "minecraft:silk_touch",
     "munks:smelting"
@@ -30,6 +20,6 @@
   "slots": [
     "mainhand"
   ],
-  "supported_items": "#minecraft:enchantable/bow",
+  "supported_items": "#munks:enchantable/smelting",
   "weight": 1
 }

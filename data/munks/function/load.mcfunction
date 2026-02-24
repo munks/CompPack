@@ -1,6 +1,7 @@
 scoreboard objectives add help trigger
 scoreboard objectives add ping trigger
 scoreboard objectives add ping_remove trigger
+scoreboard objectives add sign trigger
 scoreboard objectives add munks.player.idx dummy
 scoreboard objectives add munks.ender.idx dummy
 scoreboard objectives add hp.calc.cur dummy

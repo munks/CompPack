@@ -1,0 +1,29 @@
+{
+  "function": "minecraft:sequence",
+  "functions": [
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        {
+          "text": "제작자: ",
+          "extra": [
+            {
+              "selector": "@s"
+            }
+          ],
+          "color": "gold",
+          "italic": false,
+          "underlined": true
+        }
+      ],
+      "mode": "append"
+    },
+    {
+      "function": "minecraft:set_custom_data",
+      "tag": {
+        "signature": true
+      }
+    }
+  ]
+}

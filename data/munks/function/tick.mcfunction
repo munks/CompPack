@@ -16,7 +16,7 @@ execute as @e[type=text_display,tag=hpbar_display] run function munks:hpbar/set_
 execute as @e[type=marker,tag=light_marker] at @s run function munks:light/marker_check
 execute as @a at @s run function munks:tick_player
 
-execute as @e[type=#arrows,tag=guided_arrow] at @s run function munks:guided_arrow/tick
+execute as @e[type=#arrows,tag=guided_arrow] at @s run function munks:enchants/guided_arrow/tick
 
 execute as @e[type=item,predicate=munks:farmland_check] at @s run function munks:crops/run
 execute as @e[type=item,predicate=munks:soulsand_check] if data entity @s Item{id:"minecraft:nether_wart"} at @s run function munks:crops/plant {type:nether_wart}

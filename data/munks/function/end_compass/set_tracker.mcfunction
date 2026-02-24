@@ -1,0 +1,1 @@
+$item modify entity @s weapon.mainhand {function:set_components,components:{"minecraft:lodestone_tracker":{target:{dimension:the_end,pos:[I;$(x),0,$(z)]}}}}

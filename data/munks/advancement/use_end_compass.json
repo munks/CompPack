@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "requirements": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:compass",
+          "components": {
+            "custom_data": {
+              "end_compass": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "munks:end_compass/run"
+  }
+}

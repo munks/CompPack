@@ -1,6 +1,6 @@
 tag @s remove guided_arrow
 rotate @s facing entity @n[tag=guided_arrow_target,distance=..7] eyes
-execute at @s positioned ^ ^ ^1.5 summon marker run function munks:guided_arrow/save_pos
+execute at @s positioned ^ ^ ^1.5 summon marker run function munks:enchants/guided_arrow/save_pos
 execute store result score motion_dx munks.var run data get entity @s Pos[0] 10000
 execute store result score motion_dy munks.var run data get entity @s Pos[1] 10000
 execute store result score motion_dz munks.var run data get entity @s Pos[2] 10000

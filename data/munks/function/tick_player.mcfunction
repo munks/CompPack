@@ -2,7 +2,7 @@
 execute if score @s ping matches 1.. run function munks:ping/run
 execute if score @s ping_remove matches 1.. run function munks:ping/remove_all
 execute if score @s help matches 1.. run function munks:help
-
+execute if score @s sign matches 1.. run function munks:signature/run
 # on hand
 execute if items entity @s weapon.* clock run function munks:clock/run
 execute if items entity @s weapon.* #munks:lights anchored eyes run function munks:light/run
