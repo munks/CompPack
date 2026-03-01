@@ -1,7 +1,7 @@
 # 커서 아이템 감지
 scoreboard players reset @s munks.var
-execute if items entity @s player.cursor barrier[max_stack_size=1] run scoreboard players set @s munks.var 1
-execute if items entity @s player.cursor barrier[max_stack_size=2] run scoreboard players set @s munks.var 2
+execute if items entity @s player.cursor #munks:button[max_stack_size=1] run scoreboard players set @s munks.var 1
+execute if items entity @s player.cursor #munks:button[max_stack_size=2] run scoreboard players set @s munks.var 2
 function munks:more_ender_chest/replace_cursor
 
 # 기능 아이템 제거

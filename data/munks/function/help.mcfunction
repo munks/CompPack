@@ -31,7 +31,6 @@ tellraw @s [{text:"enchant_change",color:yellow}, {text:": 마법 부여가 변�
                     "     도끼 - 살충, 발화, 밀치기, 약탈, 날카로움, 강타가 적용 가능하고 마법 부여대에서 나타남"]]
 tellraw @s [{text:"enchant_add",color:yellow}, {text:": 마법 부여가 추가됩니다.\n",color:white}, \
 [{color:gray,text:"     유도 - 보물, 적용: 활/석궁, 발사된 화살이 근처 몹에게 유도됨, 무한과 중복 부여 불가\n"}, \
-                    "     격퇴 - 보물, 적용: 겉날개, 비행 중 근처 몹에게 피해\n", \
                     "     제련 - 보물, 적용: 곡괭이/도끼, 블럭을 캘 시 구워진 상태로 떨어짐"]]
 tellraw @s [{text:"more_recipe",color:yellow}, {text:": 레시피가 추가됩니다.\n",color:white}, \
 [{color:gray,text:"     자수정 블럭을 자수정 조각 4개로 변환 가능합니다.\n"}, \

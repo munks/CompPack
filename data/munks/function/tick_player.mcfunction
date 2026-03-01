@@ -3,6 +3,11 @@ execute if score @s ping matches 1.. run function munks:ping/run
 execute if score @s ping_remove matches 1.. run function munks:ping/remove_all
 execute if score @s help matches 1.. run function munks:help
 execute if score @s sign matches 1.. run function munks:signature/run
+
+# HP Bar
+execute as @e[distance=..20,type=!player,type=!armor_stand,type=!item,predicate=!munks:has_hpbar] if data entity @s Health at @s run function munks:hpbar/create
+execute as @e[distance=..20,type=text_display,tag=hpbar_display] run function munks:hpbar/set_data
+
 # on hand
 execute if items entity @s weapon.* clock run function munks:clock/run
 execute if items entity @s weapon.* #munks:lights anchored eyes run function munks:light/run
@@ -24,8 +29,8 @@ execute if predicate munks:send_pos_message run function munks:send_message/run_
 execute if score @s munks.has_left matches 1.. run function munks:leave_game/run
 
 # functional items on cursor
-execute if items entity @s player.cursor barrier[custom_data={functional_item:true}] run function munks:more_ender_chest/container_set
+execute if items entity @s player.cursor #munks:button[custom_data={functional_item:true}] run return run function munks:more_ender_chest/container_set
 
 # remove unexpected functional items
 execute if entity @e[type=item,distance=..5,nbt={Item:{components:{"minecraft:custom_data":{functional_item:true}}}}] run function munks:more_ender_chest/functional_set
-execute if items entity @s container.* barrier[custom_data={functional_item:true}] run function munks:more_ender_chest/functional_set
+execute if items entity @s container.* #munks:button[custom_data={functional_item:true}] run function munks:more_ender_chest/functional_set

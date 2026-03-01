@@ -11,6 +11,7 @@ scoreboard objectives add const dummy
 scoreboard objectives add munks.has_left custom:leave_game
 scoreboard objectives add munks.death deathCount
 scoreboard objectives add munks.send_cool dummy
+scoreboard objectives add munks.use_netherite_hoe used:netherite_hoe
 scoreboard players set 1 const 1
 scoreboard players set 2 const 2
 scoreboard players set 3 const 3
