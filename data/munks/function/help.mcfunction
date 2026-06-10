@@ -4,7 +4,7 @@ scoreboard players enable @s help
 tellraw @s [{text:"/trigger help",color:yellow}, {text:": 이 목록을 표시합니다.",color:white}]
 tellraw @s [{text:"/trigger ping",color:yellow}, {text:": 현재 위치에 핑을 추가합니다. 청크 로딩이 강제로 적용됩니다.",color:white}]
 tellraw @s [{text:"/trigger ping_remove",color:yellow}, {text:": 모든 핑을 제거합니다.",color:white}]
-tellraw @s [{text:"/trigger sign",color:yellow}, {text:": 장비에 이름을 서명합니다.",color:white}]
+tellraw @s [{text:"/trigger sign",color:yellow}, {text:": 장비에 이름을 서명합니다. 서명 이후 모루 사용이 불가합니다.",color:white}]
 tellraw @s [{text:"clock",color:yellow}, {text:": 시계를 들고 있으면 게임 내 시간이 표시됩니다.",color:white}]
 tellraw @s [{text:"recovery_compass",color:yellow}, {text:": 만회 나침반을 들고 있으면 마지막 사망 위치가 표시됩니다.",color:white}]
 tellraw @s [{text:"item_message",color:yellow}, {text:": Ctrl+Shift 입력 시 현재 들고 있는 아이템을 채팅창에 띄웁니다.",color:white}]
@@ -27,17 +27,18 @@ tellraw @s [{text:"enchant_change",color:yellow}, {text:": 마법 부여가 변�
 [{color:gray,text:"     가시 - 확률: 30~60%, 피해: 2~5, 내구도 감소 제거\n"}, \
                     "     찌르기 - 물에 있거나 비를 맞고 있는 몹에게도 적용\n", \
                     "     화염 - 석궁에 적용 가능하고 마법 부여대에서 나타남\n", \
-                    "     날카로움 - 효율과 같은 효과를 가짐, 효율과 중복 부여 불가", \
+                    "     날카로움 - 효율과 같은 효과를 가짐, 효율과 중복 부여 불가\n", \
                     "     도끼 - 살충, 발화, 밀치기, 약탈, 날카로움, 강타가 적용 가능하고 마법 부여대에서 나타남"]]
 tellraw @s [{text:"enchant_add",color:yellow}, {text:": 마법 부여가 추가됩니다.\n",color:white}, \
-[{color:gray,text:"     유도 - 보물, 적용: 활/석궁, 발사된 화살이 근처 몹에게 유도됨, 무한과 중복 부여 불가\n"}, \
+[{color:gray,text:"     유도 - 적용: 활/석궁, 발사된 화살이 근처 몹에게 유도됨, 무한, 수선과 중복 부여 불가\n"}, \
                     "     제련 - 보물, 적용: 곡괭이/도끼, 블럭을 캘 시 구워진 상태로 떨어짐"]]
 tellraw @s [{text:"more_recipe",color:yellow}, {text:": 레시피가 추가됩니다.\n",color:white}, \
-[{color:gray,text:"     자수정 블럭을 자수정 조각 4개로 변환 가능합니다.\n"}, \
+[{color:gray,text:"     자수정 블록을 자수정 조각 4개로 변환 가능합니다.\n"}, \
                     "     프리즈머린을 프리즈머린 조각 4개로 변환 가능합니다.\n", \
+                    "     석영 블록을 네더 석영 4개로 변환 가능합니다.\n", \
                     "     눈 블럭을 눈덩이 4개로 변환 가능합니다.\n", \
                     "     유리 4개로 유리병 4개를 만들 수 있습니다.\n", \
                     "     엔더의 눈 8개와 지도로 근거지 지도를 만들 수 있습니다.\n", \
-                    "     엔더의 눈 8개와 지도로 엔드 나침반을 만들 수 있습니다.\n", \
+                    "     엔더의 눈 8개와 나침반으로 엔드 나침반을 만들 수 있습니다.\n", \
                     "     비트 8개와 그릇으로 강화된 비트 수프를 만들 수 있습니다.\n", \
                     "     모든 가죽 레시피에 토끼 가죽을 대신 사용 가능합니다."]]

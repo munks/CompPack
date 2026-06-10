@@ -1,4 +1,5 @@
-execute store result score daytime munks.var run time query daytime
+## Clock (Time)
+execute store result score daytime munks.var run time query day
 scoreboard players operation milisec munks.var = daytime munks.var
 scoreboard players operation milisec munks.var %= 20 const
 scoreboard players operation daytime munks.var /= 20 const
@@ -10,10 +11,16 @@ execute if score sec munks.var matches 10.. run data modify storage munks:variab
 execute if score sec munks.var matches ..9 run data modify storage munks:variables time.zero set value "0"
 execute store result storage munks:variables time.milisec int 1 run scoreboard players operation milisec munks.var *= 5 const
 
-execute as @e[type=marker,tag=light_marker] at @s run function munks:light/marker_check
-execute as @a at @s run function munks:tick_player
 
+## Light (Torch)
+execute as @e[type=marker,tag=light_marker] at @s run function munks:light/marker_check
+
+## Enchant (Guided)
 execute as @e[type=#arrows,tag=guided_arrow] at @s run function munks:enchants/guided_arrow/tick
 
+## Farmland (Auto Farming)
 execute as @e[type=item,predicate=munks:farmland_check] at @s run function munks:crops/run
 execute as @e[type=item,predicate=munks:soulsand_check] if data entity @s Item{id:"minecraft:nether_wart"} at @s run function munks:crops/plant {type:nether_wart}
+
+## Player Execute
+execute as @a at @s run function munks:tick_player

@@ -2,6 +2,7 @@ scoreboard objectives add help trigger
 scoreboard objectives add ping trigger
 scoreboard objectives add ping_remove trigger
 scoreboard objectives add sign trigger
+scoreboard objectives add switch_hpbar trigger
 scoreboard objectives add munks.player.idx dummy
 scoreboard objectives add munks.ender.idx dummy
 scoreboard objectives add hp.calc.cur dummy
@@ -12,6 +13,8 @@ scoreboard objectives add munks.has_left custom:leave_game
 scoreboard objectives add munks.death deathCount
 scoreboard objectives add munks.send_cool dummy
 scoreboard objectives add munks.use_netherite_hoe used:netherite_hoe
+scoreboard objectives add munks.ore_finder dummy
+scoreboard objectives add munks.enable_hpbar dummy
 scoreboard players set 1 const 1
 scoreboard players set 2 const 2
 scoreboard players set 3 const 3

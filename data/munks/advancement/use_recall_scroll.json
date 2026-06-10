@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "requirements": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:feather",
+          "components": {
+            "minecraft:custom_data": {
+              "recall_scroll": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "munks:ping_tp/run"
+  }
+}

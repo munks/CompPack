@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " o ",
+    "oxo",
+    "bbb"
+  ],
+  "key": {
+    "x": "minecraft:feather",
+    "o": "minecraft:emerald",
+    "b": "minecraft:paper"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:feather",
+    "components": {
+      "item_name": {
+        "translate": "item.munks.recall_scroll",
+        "fallback": "귀환서"
+      },
+      "consumable": {
+        "sound": "ui.button.click",
+        "animation": "bow",
+        "consume_seconds": 2.0
+      },
+      "custom_data": {
+        "recall_scroll": true
+      },
+      "food": {
+          "nutrition": 0,
+          "saturation": 0,
+          "can_always_eat": true
+      },
+      "max_stack_size": 16,
+      "enchantment_glint_override": true,
+      "lore": [
+        {
+          "translate": "item.munks.recall_scroll.lore",
+          "fallback": "가까운 핑으로 순간이동 합니다."
+        }
+      ]
+    }
+  }
+}

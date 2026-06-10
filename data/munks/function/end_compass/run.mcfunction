@@ -1,6 +1,6 @@
 advancement revoke @s only munks:use_end_compass
 
-execute unless data entity @s {Dimension:"minecraft:the_end"} run return run title @s actionbar "현재 차원에서 사용할 수 없습니다."
+execute unless data entity @s {Dimension:"minecraft:the_end"} run return run title @s actionbar {translate:"function.munks.end_compass.error",fallback:"현재 차원에서 사용할 수 없습니다."}
 execute if data entity @s SelectedItem.components.minecraft:lodestone_tracker run return fail
 
 execute at @s run loot spawn ~ ~ ~ loot munks:end_city_map

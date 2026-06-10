@@ -6,7 +6,8 @@
       "entity": "this",
       "lore": [
         {
-          "text": "제작자: ",
+          "translate": "item.munks.signature",
+          "fallback": "제작자: ",
           "extra": [
             {
               "selector": "@s"

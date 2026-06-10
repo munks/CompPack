@@ -1,0 +1,2 @@
+execute store success score @s munks.ore_finder run clone ~-5 ~-5 ~-5 ~5 ~5 ~5 ~-5 ~-5 ~-5 filtered minecraft:ancient_debris force
+execute if score @s munks.ore_finder matches 1.. run title @s actionbar {translate:"function.munks.ore_finder",fallback:"주위에 고대 잔해가 있습니다."}

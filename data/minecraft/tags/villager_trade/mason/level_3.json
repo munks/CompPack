@@ -1,0 +1,8 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:mason/3/granite_emerald",
+    "minecraft:mason/3/andesite_emerald",
+    "minecraft:mason/3/diorite_emerald"
+  ]
+}

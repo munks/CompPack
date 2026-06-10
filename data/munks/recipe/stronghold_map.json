@@ -13,11 +13,11 @@
   "result": {
     "id": "minecraft:map",
     "components": {
-      "minecraft:item_name": {
+      "item_name": {
         "translate": "filled_map.stronghold",
         "fallback": "근거지 지도"
       },
-      "minecraft:custom_data": {
+      "custom_data": {
         "unset_map": true
       }
     },

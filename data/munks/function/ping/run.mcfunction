@@ -2,8 +2,8 @@ scoreboard players reset @s ping
 scoreboard players enable @s ping
 
 execute store result score @s munks.var run forceload query ~ ~
-execute if score @s munks.var matches 1.. run return run tellraw @s {text:"ping: 현재 청크에 이미 핑이 존재합니다.",color:red}
-execute if entity @e[tag=ping_entity,distance=..8] run return run tellraw @s {text:"ping: 근처에 이미 핑이 존재합니다.",color:red}
+execute if score @s munks.var matches 1.. run return run tellraw @s {translate:"function.munks.ping.error_1",fallback:"ping: 현재 청크에 이미 핑이 존재합니다.",color:red}
+execute if entity @e[tag=ping_entity,distance=..8] run return run tellraw @s {translate:"function.munks.ping.error_2",fallback:"ping: 근처에 이미 핑이 존재합니다.",color:red}
 
 execute if data storage munks:variables pings[2] run function munks:ping/remove_old with storage munks:variables pings[0]
 

@@ -1,0 +1,7 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:mason/4/quartz_emerald",
+    "munks:mason/4/emerald_terracotta"
+  ]
+}

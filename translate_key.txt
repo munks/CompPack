@@ -1,0 +1,48 @@
+munks/function/loading/run:                     ui.munks.loading
+
+=========================
+munks/recipe/stronghold_map:                    filled_map.stronghold
+munks/recipe/recall_scroll:                     item.munks.recall_scroll
+munks/recipe/recall_scroll:                     item.munks.recall_scroll.lore
+munks/recipe/end_compass:                       item.munks.end_compass
+munks/recipe/end_compass:                       item.munks.end_compass.lore
+munks/recipe/ancient_compass:                   item.munks.ancient_compass
+munks/recipe/ancient_compass:                   item.munks.ancient_compass.lore
+
+=========================
+munks/function/vehicle_desc/run:                function.munks.vehicle_desc.speed
+munks/function/vehicle_desc/run:                function.munks.vehicle_desc.jump
+
+munks/item_modifier/set_signature:              item.munks.signature
+munks/function/signature/run:                   function.munks.signature.error_1
+munks/function/signature/run:                   function.munks.signature.error_2
+munks/function/signature/run:                   function.munks.signature.error_3
+
+munks/function/send_message/run_pos:            ui.dimension
+
+munks/function/ping/set_ping_data:              ui.dimension
+
+munks/function/recovery_compass/run:            function.munks.recovery_compass.error
+
+munks/function/ping/run:                        function.munks.ping.error_1
+munks/function/ping/run:                        function.munks.ping.error_2
+munks/function/ping/remove_all:                 function.munks.ping.remove
+
+munks/function/ore_finder/run:                  function.munks.ore_finder
+
+munks/function/more_ender_chest/functional_set: function.munks.more_ender_chest.prev_container
+munks/function/more_ender_chest/functional_set: function.munks.more_ender_chest.next_container
+munks/function/loading/data_storage_reset:      function.munks.more_ender_chest.next_container
+munks/function/more_ender_chest/functional_set: function.munks.more_ender_chest.current_container
+munks/function/loading/data_storage_reset:      function.munks.more_ender_chest.current_container
+
+munks/function/map_coord/run:                   function.munks.map_coord.error
+
+munks/function/hpbar/activate/disable:          ui.munks.hpbar.deactivate
+munks/function/hpbar/activate/enable:           ui.munks.hpbar.activate
+
+munks/function/end_compass/run:                 function.munks.end_compass.error
+
+=====================
+munks/enchantment/smelting:                     enchantment.minecraft.smelting
+munks/enchantment/guide:                        enchantment.minecraft.guide

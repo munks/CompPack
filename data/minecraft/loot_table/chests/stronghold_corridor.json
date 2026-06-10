@@ -188,7 +188,7 @@
             {
               "function": "minecraft:enchant_with_levels",
               "levels": 30.0,
-              "options": "#munks:on_random_loot"
+              "options": "#minecraft:on_random_loot"
             }
           ],
           "name": "minecraft:book"

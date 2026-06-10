@@ -1,4 +1,4 @@
-execute unless block ~ ~ ~ air run return fail
+execute unless block ~ ~ ~ #minecraft:air run return fail
 
 execute if items entity @s weapon.* #munks:light_7 run setblock ~ ~ ~ light[level=7]
 execute if items entity @s weapon.* #munks:light_10 run setblock ~ ~ ~ light[level=10]
