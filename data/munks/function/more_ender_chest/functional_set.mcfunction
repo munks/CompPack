@@ -7,4 +7,4 @@ execute if score @s munks.ender.idx matches 1 run item replace entity @s enderch
 execute if score @s munks.ender.idx matches 2 run item replace entity @s enderchest.26 with oak_button[custom_data={functional_item:true},item_name={translate:"function.munks.more_ender_chest.next_container",fallback:"다음 컨테이너로"},lore=[{translate:"function.munks.more_ender_chest.current_container",with:["2"],fallback:"현재: %s번 컨테이너"}],max_stack_size=2]
 execute if score @s munks.ender.idx matches 3 run item replace entity @s enderchest.26 with dark_oak_button[custom_data={functional_item:true},tooltip_display={hide_tooltip:true}]
 execute as @e[type=item,distance=..5] if data entity @s Item.components."minecraft:custom_data".functional_item run kill @s
-clear @s barrier[custom_data={functional_item:true}]
+clear @s #munks:button[custom_data={functional_item:true}]
