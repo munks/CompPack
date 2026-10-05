@@ -1,22 +1,16 @@
 {
-  "pools": [
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "destination": "munks:end_city_located",
-              "decoration": "minecraft:target_x",
-              "function": "minecraft:exploration_map",
-              "skip_existing_chunks": false,
-              "zoom": 1
-            }
-          ],
-          "name": "minecraft:map"
-        }
-      ]
-    }
-  ]
+  "pools": [{
+    "rolls": 1,
+    "entries": [{
+      "type": "minecraft:item",
+      "modifier": {
+        "destination": "#munks:end_city_located",
+        "decoration": "minecraft:target_x",
+        "type": "minecraft:exploration_map",
+        "skip_existing_chunks": false,
+        "zoom": 1
+      },
+      "name": "minecraft:map"
+    }]
+  }]
 }

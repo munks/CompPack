@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "munks:prismarine_shard"
+        "recipes": "munks:prismarine_shard"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

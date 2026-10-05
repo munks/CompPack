@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "munks:end_compass"
+        "recipes": "munks:end_compass"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

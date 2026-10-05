@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "munks:recall_scroll"
+        "recipes": "munks:recall_scroll"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

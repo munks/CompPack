@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "munks:amethyst_shard"
+        "recipes": "munks:amethyst_shard"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "munks:ancient_compass"
+        "recipes": "munks:ancient_compass"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

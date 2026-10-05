@@ -1,34 +1,39 @@
 {
-  "pools": [
-    {
-      "rolls": 1,
-      "entries": [
+  "pools": [{
+    "rolls": 1,
+    "entries": [{
+      "type": "minecraft:item",
+      "modifier": [
         {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "destination": "minecraft:eye_of_ender_located",
-              "decoration": "minecraft:target_x",
-              "function": "minecraft:exploration_map",
-              "skip_existing_chunks": false,
-              "zoom": 1
+          "destination": "#minecraft:eye_of_ender_located",
+          "decoration": "minecraft:target_x",
+          "type": "minecraft:exploration_map",
+          "skip_existing_chunks": false,
+          "zoom": 1
+        },
+        {
+          "type": "minecraft:set_name",
+          "name": {
+            "translate": "filled_map.stronghold",
+            "fallback": "근거지 지도"
+          },
+          "target": "item_name"
+        },
+        {
+          "type": "minecraft:set_components",
+          "components": {
+            "minecraft:consumable": {
+              "consume_seconds": 1000000
             },
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "translate": "filled_map.stronghold",
-                "fallback": "근거지 지도"
-              },
-              "target": "item_name"
-            },
-            {
-              "function": "minecraft:reference",
-              "name": "munks:add_consumable"
+            "minecraft:food": {
+              "nutrition": 0,
+              "saturation": 0,
+              "can_always_eat": true
             }
-          ],
-          "name": "minecraft:map"
+          }
         }
-      ]
-    }
-  ]
+      ],
+      "name": "minecraft:map"
+    }]
+  }]
 }

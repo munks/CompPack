@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "munks:enchanted_golden_apple"
+        "recipes": "munks:enchanted_golden_apple"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -7,6 +7,8 @@ scoreboard objectives add munks.player.idx dummy
 scoreboard objectives add munks.ender.idx dummy
 scoreboard objectives add hp.calc.cur dummy
 scoreboard objectives add hp.calc.max dummy
+scoreboard objectives add hp.calc.tmp dummy
+scoreboard objectives add hp.calc.limit dummy
 scoreboard objectives add munks.var dummy
 scoreboard objectives add const dummy
 scoreboard objectives add munks.has_left custom:leave_game

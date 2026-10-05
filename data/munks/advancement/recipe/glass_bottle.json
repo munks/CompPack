@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "munks:glass_bottle"
+        "recipes": "munks:glass_bottle"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

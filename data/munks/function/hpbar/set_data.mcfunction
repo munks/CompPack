@@ -4,8 +4,12 @@ execute store result entity @s data.curHP int 1 on vehicle run data get entity @
 execute store result score @s hp.calc.max run data get entity @s data.maxHP
 execute store result score @s hp.calc.cur run data get entity @s data.curHP
 
-execute if predicate munks:hp_red run data modify entity @s data.color set value red
-execute if predicate munks:hp_gold run data modify entity @s data.color set value gold
-execute if predicate munks:hp_green run data modify entity @s data.color set value green
+scoreboard players operation @s hp.calc.tmp = @s hp.calc.cur
+scoreboard players operation @s hp.calc.tmp *= 4 const
+data modify entity @s data.color set value red
+execute if score @s hp.calc.tmp >= @s hp.calc.max run data modify entity @s data.color set value gold
+scoreboard players operation @s hp.calc.limit = @s hp.calc.max
+scoreboard players operation @s hp.calc.limit *= 3 const
+execute if score @s hp.calc.tmp >= @s hp.calc.limit run data modify entity @s data.color set value green
 
 function munks:hpbar/set_text with entity @s data

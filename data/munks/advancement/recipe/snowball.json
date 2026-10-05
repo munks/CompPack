@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "munks:snowball"
+        "recipes": "munks:snowball"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

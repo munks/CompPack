@@ -7,7 +7,11 @@
           "items": "minecraft:lead"
         },
         "entity": {
-          "type": "minecraft:villager"
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:villager"
+          }
         }
       }
     }
